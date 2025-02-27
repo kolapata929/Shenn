@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Debjit's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Sound Button -->
+  <button id="sound-btn" class="sound-btn">
+    <i class="fas fa-volume-mute"></i>
+  </button>
+
+  <!-- Hamburger Menu -->
+  <div class="hamburger-menu" id="hamburger-menu">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <!-- Popup Buttons -->
+  <div class="popup-buttons" id="popup-buttons">
+    <button class="popup-btn" id="home-btn" onclick="toggleSection('home')">Home</button>
+    <button class="popup-btn" id="about-btn" onclick="toggleSection('about')">About</button>
+    <button class="popup-btn" id="contact-btn" onclick="toggleSection('contact')">Contact</button>
+  </div>
+
+  <!-- Home Section -->
+  <div id="home" class="section home">
+    <div class="content">
+      <h1 class="animated-text">Welcome to My Portfolio</h1>
+      <p class="animated-text">I am just a beginner</p>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div id="about" class="section about">
+    <div class="content">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Hi, I'm <span class="highlight">Nafish Shaikh</span> I am just a starter nothing is special about me </p>
+          <p>With over <span class="highlight"> here is some skilld i have now</span> </p>
+          <ul>
+            <li><i class="fas fa-credit-card"></i> CARDING</li>
+            <li><i class="fas fa-tools"></i> TOOLS MAKING</li>
+          </ul>
+          <p> If you need any help feel free to contact I will try to help</p>
+        </div>
+        <div class="about-image">
+          <img src="https://cdn.glitch.global/d2a935df-87a4-4225-907d-e5879f983e2c/IMG_20250228_004609_721.jpg?v=1740683838592" alt="Nafish Shaikh">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact" class="section contact">
+    <div class="content">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out to me for collaborations or just a friendly chat!</p>
+      <div class="social-links">
+        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://t.me/dronzerX1" target="_blank"><i class="fab fa-telegram"></i></a>
+        <a href="https://www.instagram.com/sidd.nafish?igsh=MWltc3FiNXdnazAybQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="mailto: dawn58985@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Video -->
+  <div class="video-background">
+    <video autoplay muted loop id="bg-video">
+      <source src="https://cdn.glitch.global/d2a935df-87a4-4225-907d-e5879f983e2c/AQNZItPd3cg_PSEHVBZcET8bo5ZA0c7eWsmrJYWrqoMeyYZ5GWCZxfqhQ5BJw9npE2JQ4czqoG3y9td8UbQCRH8d.mp4?v=1740683955463" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
